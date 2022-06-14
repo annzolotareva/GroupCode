@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First project</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/nullstyle.css">
+    <link rel="stylesheet" href="./css/style__other-pages.css">
+    <link rel="stylesheet" href="./css/themes/default-dark/style.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+    <script src="dist/jstree.min.js"></script>
+    <script src="./dist/editorPage.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">GC</div>
+                <div class="header__butons">
+                    <div class="header__button">
+                        <img src="./img/repository-page/plus_icon.svg" alt="">
+                        <img src="./img/repository-page/polygon.svg" alt="">
+                    </div>
+                    <div class="header__button">
+                        <img src="./img/repository-page/account_avatar_icon.svg" alt="">
+                        <img src="./img/repository-page/polygon.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main n class="main">
+            <div class="main__container">
+                <div class="project__title">First project</div>
+                <div class="project__buttons">
+                    <div class="project__buttons_left">
+                        <div class="project__button project__button_left roles-of-project-button">
+                            <p>МОИ РОЛИ В ПРОЕКТЕ</p>
+                            <img class="polygon" src="./img/repository-page/polygon.svg" alt="">
+                        </div>
+                        <div class="project__button project__button_left members__button">
+                            <div class="members__button_left-field">
+                                <p>ГРУППА ПРОЕКТА</p>
+                                <img class="polygon" src="./img/repository-page/polygon.svg" alt="">
+                            </div>
+                            <img class="user_plus_icon" src="./img/project-page/user_plus_icon.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="project__button project__button_right">
+                        <p>Включить режим редактирования онлайн</p>
+                    </div>
+                </div>
+                <div class="editor">
+                    <div class="editor__explorer explorer">
+                        <div class="explorer__header">
+                            <div class="explorer__ title">Редактор кода</div>
+                            <img src="./img/editor-page/expansion-icon.svg" alt="" class="expansion__icon">
+                        </div>
+                        <div class="explorer__area-button-save">
+                            <div class="explorer__button-save"><img src="./img/project-page/file-icon.svg" alt=""></div>
+                        </div>
+                        <div class="explorer__name-project">First project</div>
+                        <div id="jstree_demo_div" class="explorer__files">
+                            <!-- <div class="explorer__file-section">
+                                <img src="./img/editor-page/arrow-icon-onRight.svg" alt="">
+                                <img src="./img/editor-page/file-icon-white.svg" alt="">
+                                <p>fonst</p>
+                            </div>
+                            <div class="explorer__file-section">
+                                <img src="./img/editor-page/arrow-icon-onRight.svg" alt="">
+                                <img src="./img/editor-page/file-icon-white.svg" alt="">
+                                <p>styles</p>
+                            </div>
+                            <div class="explorer__file-section">
+                                <img src="./img/editor-page/arrow-icon-onButtom.svg" alt="">
+                                <img src="./img/editor-page/file-icon-transperent.svg" alt="">
+                                <p>srs</p>
+                            </div>
+                            <div class="explorer__file-section explorer__file-section_selected">
+                                <img src="./img/editor-page/js-file-icon-gray.svg" alt="">
+                                <p>index.js</p>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="editor__working-area working-area">
+                        <div class="working-area__header">
+                            <div class="working-area__file-section">
+                                <img src="./img/editor-page/js-file-icon-gray.svg" alt="">
+                                <p>index.js</p>
+                            </div>
+                        </div>
+                        <div id="editor">function foo(items) {
+                            var x = "All this is syntax highlighted";
+                            return x;
+                            }
+                        </div>
+                        <script src="src/ace.js" type="text/javascript" charset="utf-8">
+                        </script>
+                        <script>
+                            var editor = ace.edit("editor");
+                            editor.setTheme("ace/theme/tomorrow_night");
+                            editor.session.setMode("ace/mode/javascript");
+                        </script>
+                        <div class="working-area__footer">
+                            <div class="number-of-current-line">Строка 5:36</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer" id="footer">
+            <div class="footer__container">
+                <div class="footer__logo logo">GroupCode</div>
+                <div class="footer__bottom">
+                    <nav class="footer__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="#" class="menu__link menu__link_violet">О
+                                    сервисе</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link menu__link_violet">Возможности</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link menu__link_violet">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer-bottom__logo-text">©2022 GroupCode</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хранилище проектов</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/nullstyle.css">
+    <link rel="stylesheet" href="./css/style__other-pages.css">
+    <script src="./dist/projectRepo.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper-repo">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">GC</div>
+                <div class="header__butons">
+                    <div class="header__button">
+                        <img src="./img/repository-page/plus_icon.svg" alt="">
+                        <img src="./img/repository-page/polygon.svg" alt="">
+                    </div>
+                    <div class="header__button">
+                        <img src="./img/repository-page/account_avatar_icon.svg" alt="">
+                        <img src="./img/repository-page/polygon.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__container">
+                <div class="repo__inner">
+                    <div class="repo__title">Хранилище проектов</div>
+                    <div class="repo__buttons">
+                        <div class="repo__button">Создать новый проект</div>
+                        <div class="repo__button">Отправить запрос на доступ к проекту</div>
+                    </div>
+                    <div class="projects-field">
+                        <div class="projects-field__header">
+                            <form class="projects-field__search-form">
+                                <div class="projects-field__inner">
+                                    <img class="search-form__icon" src="./img/repository-page/search-icon.svg" alt="">
+                                    <input id="search-input" type="text" placeholder="Найти проект по названию">
+                                </div>
+                            </form>
+                            <div class="projects-field__sort-button sort-button">
+                                <p>Сортировка</p>
+                                <img src="./img/repository-page/sort.svg" alt="">
+                            </div>
+                        </div>
+                        <table class="projects-field__body">
+                            <thead class="projects-field__table-title">
+                                <tr>
+                                    <th>Название проекта</th>
+                                    <th>Дата последних изменений</th>
+                                    <th>Количество участников</th>
+                                    <th>Роли в проекте</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <!--ряд с ячейками заголовков-->
+                            <tbody id="projects-field__table-body">
+                                <!-- <tr>
+                                    <td>First project</td>
+                                    <td>12:27 21.02.2021</td>
+                                    <td>3</td>
+                                    <td>Администратор проекта, программист</td>
+                                    <td><img src="./img/repository-page/edit-icon.svg" alt=""></td>
+                                    <td><img src="./img/repository-page/delete-icon.svg" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Project_2</td>
+                                    <td>17:01 1.04.2022</td>
+                                    <td>5</td>
+                                    <td>Просматривающий</td>
+                                    <td><img src="./img/repository-page/eye-icon.svg" alt=""></td>
+                                    <td><img src="./img/repository-page/delete-icon.svg" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Дипломный проект</td>
+                                    <td>09:33 1.05.2022</td>
+                                    <td>1</td>
+                                    <td>Администратор проекта, программист</td>
+                                    <td><img src="./img/repository-page/edit-icon.svg" alt=""></td>
+                                    <td><img src="./img/repository-page/delete-icon.svg" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Игра "Крестики нолики"</td>
+                                    <td>23:12 7.05.2022</td>
+                                    <td>4</td>
+                                    <td>Программист</td>
+                                    <td><img src="./img/repository-page/edit-icon.svg" alt=""></td>
+                                    <td><img src="./img/repository-page/delete-icon.svg" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Matrix</td>
+                                    <td>13:45 19.05.2022</td>
+                                    <td>1</td>
+                                    <td>Администратор проекта, программист</td>
+                                    <td><img src="./img/repository-page/edit-icon.svg" alt=""></td>
+                                    <td><img src="./img/repository-page/delete-icon.svg" alt=""></td>
+                                </tr> -->
+                            </tbody>
+                            <!--ряды с ячейками тела таблицы-->
+                        </table>
+                        <div class="project-field__footer">
+                            <div class="numb-projects">
+                                <p class="numb-projects__text">Количество проектов на странице:</p>
+                                <select class="numb-projects__count">
+                                    <option>5</option>
+                                    <option>10</option>
+                                    <option>Все</option>
+                                </select>
+                                <p class="numb-projects__count-text">1-5 из 5</p>
+                                <div class="project-field__buttons">
+                                    <img class="project-field__button" src="./img/repository-page/button-back.svg"
+                                        alt="">
+                                    <img class="project-field__button" src="./img/repository-page/button-next.svg"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer class="footer" id="footer">
+            <div class="footer__container">
+                <div class="footer__logo logo">GroupCode</div>
+                <div class="footer__bottom">
+                    <nav class="footer__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="#" class="menu__link menu__link_violet">О
+                                    сервисе</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link menu__link_violet">Возможности</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link menu__link_violet">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer-bottom__logo-text">©2022 GroupCode</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div name="modal-sort" class="modal-sort" id="modal-sort" style="display: none; opacity: 1;">
+        <div class="modal-sort__close-btn">
+            <img src="./img/repository-page/close-btn.png" alt="">
+        </div>
+        <form class="modal-sort__form">
+            <p><b class="modal-sort__title">СОРТИРОВАТЬ ПО:</b></p>
+            <div class="modal-sort__elements">
+                <p>По умолчанию <input name="modal-sort__sort-option" type="radio" value="default" checked></p>
+                <p>По названию <input name="modal-sort__sort-option" type="radio" value="by-name"></p>
+                <p>По дате изменений <input name="modal-sort__sort-option" type="radio" value="by-last-change"></p>
+                <p>По количеству
+                    участников <input name="modal-sort__sort-option" type="radio" value="by-number-of-participants"></p>
+            </div>
+            <p><input class="modal-sort__btn" type="submit" value="Выбрать"></p>
+        </form>
+    </div>
+    <div class="modal-overlay"></div>
+</body>
+
+</html>

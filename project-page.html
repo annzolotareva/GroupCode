@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First project</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/nullstyle.css">
+    <link rel="stylesheet" href="./css/style__other-pages.css">
+    <script src="./dist/projectPage.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">GC</div>
+                <div class="header__butons">
+                    <div class="header__button">
+                        <img src="./img/repository-page/plus_icon.svg" alt="">
+                        <img src="./img/repository-page/polygon.svg" alt="">
+                    </div>
+                    <div class="header__button">
+                        <img src="./img/repository-page/account_avatar_icon.svg" alt="">
+                        <img src="./img/repository-page/polygon.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__container">
+                <div class="project-info">
+                    <div class="project-info__title">First project</div>
+                    <div class="project-info__buttons">
+                        <div class="project-info__button">Открыть проект в редакторе кода</div>
+                        <div class="project-info__button">Импортировать файл или папку</div>
+                        <div class="project-info__button">Экспортировать проект</div>
+                    </div>
+                    <div class="project-info__body">
+                        <div class="project-field">
+                            <div class="project-field__header">
+                                <form class="project-field__search-form">
+                                    <div class="project-field__inner">
+                                        <img class="search-form__icon" src="./img/repository-page/search-icon.svg"
+                                            alt="">
+                                        <input type="text" placeholder="Найти файл или папку по названию">
+                                    </div>
+                                </form>
+                                <div class="project-field__sort-button sort-button">
+                                    <p>Сортировка</p>
+                                    <img src="./img/repository-page/sort.svg" alt="">
+                                </div>
+                                <form class="project-field__sort-form" style="display: none">
+                                    <p>СОРТИРОВАТЬ ПО:</p>
+                                    <p>По умолчанию <input type="radio" value=""></p>
+                                    <p>По названию <input type="radio" value=""></p>
+                                    <p>По дате изменений <input type="radio" value=""></p>
+                                </form>
+                            </div>
+                            <table class="project-field__body">
+                                <thead class="project-field__table-title">
+                                    <tr>
+                                        <th>Название файла или папки</th>
+                                        <th>Последние изменения</th>
+                                        <th>Дата последних изменений</th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <!--ряд с ячейками заголовков-->
+                                <tbody id="project-field__table-body">
+                                    <tr>
+                                        <td><img src="./img/project-page/file-icon.svg" alt="">fonts</td>
+                                        <td>Добавлен новый шрифт "Hack"</td>
+                                        <td>12:20 21.02.2021</td>
+                                        <td></td>
+                                        <td><img src="./img/repository-page/delete-icon.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="./img/project-page/file-icon.svg" alt="">styles</td>
+                                        <td>Без описания</td>
+                                        <td>12:00 21.02.2021</td>
+                                        <td></td>
+                                        <td><img src="./img/repository-page/delete-icon.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="./img/project-page/html-file__icon.svg" alt="">index.html</td>
+                                        <td>Подключен шрифт "Hack"</td>
+                                        <td>12:25 21.02.2021</td>
+                                        <td><img src="./img/repository-page/edit-icon.svg" alt=""></td>
+                                        <td><img src="./img/repository-page/delete-icon.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="./img/project-page/js-file__icon.svg" alt="">main.js</td>
+                                        <td>Добавлена функция "start"</td>
+                                        <td>11:30 21.02.2021</td>
+                                        <td><img src="./img/repository-page/edit-icon.svg" alt=""></td>
+                                        <td><img src="./img/repository-page/delete-icon.svg" alt=""></td>
+                                    </tr>
+                                </tbody>
+                                <!--ряды с ячейками тела таблицы-->
+                            </table>
+                        </div>
+                        <div class="right-sidebar">
+                            <div class="roles-in-project">
+                                <div class="roles-in-project__title">МОИ РОЛИ В ПРОЕКТЕ:</div>
+                                <div class="roles-in-project__role">Администратор проекта</div>
+                                <div class="roles-in-project__role">Программист</div>
+                            </div>
+                            <div class="project-group">
+                                <div class="project-group__header">
+                                    <div class="project-group__title">ГРУППА ПРОЕКТА:</div>
+                                    <img src="./img/project-page/user_plus_icon.svg" alt="">
+                                </div>
+                                <div class="project-group__member"><img class="project-group__member-icon_without-img"
+                                        src="./img/project-page/avatar-people__icon.svg" alt="">Анна Золотарева<img
+                                        class="points" src="./img/project-page/points-icon.svg" alt="">
+                                </div>
+                                <div class="project-group__member">
+                                    <img class="project-group__member-icon"
+                                        src="./img/project-page/VladislavStepanov.png" alt="">Владислав Степанов
+                                    <img class="points" src="./img/project-page/points-icon.svg" alt="">
+                                </div>
+                                <div class="project-group__member">
+                                    <img class="project-group__member-icon" src="./img/project-page/FilippMiller.png"
+                                        alt="">Filipp Miller
+                                    <img class="points" src="./img/project-page/points-icon.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="footer__container">
+            <div class="footer__logo logo">GroupCode</div>
+            <div class="footer__bottom">
+                <nav class="footer__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#" class="menu__link menu__link_violet">О
+                                сервисе</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link menu__link_violet">Возможности</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link menu__link_violet">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer-bottom__logo-text">©2022 GroupCode</div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <div name="modal-sort" class="modal-sort" id="modal-sort" style="display: none; opacity: 1;">
+        <div class="modal-sort__close-btn">
+            <img src="./img/repository-page/close-btn.png" alt="">
+        </div>
+        <form class="modal-sort__form">
+            <p><b class="modal-sort__title">СОРТИРОВАТЬ ПО:</b></p>
+            <div class="modal-sort__elements">
+                <p>По умолчанию <input name="modal-sort__sort-option" type="radio" value="default" checked></p>
+                <p>По названию <input name="modal-sort__sort-option" type="radio" value="by-name"></p>
+                <p>По дате изменений <input name="modal-sort__sort-option" type="radio" value="by-last-change"></p>
+            </div>
+            <p><input class="modal-sort__btn" type="submit" value="Выбрать"></p>
+        </form>
+    </div>
+    <div class="modal-overlay"></div>
+</body>
+
+</html>

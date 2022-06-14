@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "login": "Анна",
+      "email": "anazolotarewa@yandex.ru",
+      "password": "Анна"
+    },
+    {
+      "user-name": "Аля",
+      "user-email": "dfsf@xfgdg",
+      "user-password": "Аля",
+      "id": 1
+    }
+  ],
+  "projects": [
+    {
+      "id": 0,
+      "name": "Second Project",
+      "dateOfChange": "12:27 21.02.2021",
+      "numberOfParticipants": 3
+    },
+    {
+      "id": 1,
+      "name": "First Project",
+      "dateOfChange": "12:27 21.02.2021",
+      "numberOfParticipants": 2
+    }
+  ],
+  "roles": [
+    {
+      "id": 0,
+      "name": "Администратор проекта"
+    },
+    {
+      "id": 1,
+      "name": "Программист"
+    },
+    {
+      "id": 2,
+      "name": "Просматривающий"
+    }
+  ],
+  "rolesInProject": [
+    {
+      "id": "0",
+      "user": "0",
+      "project": "0",
+      "roles": "Администратор проекта"
+    },
+    {
+      "id": "1",
+      "user": "0",
+      "project": "1",
+      "roles": "Администратор проекта, программист"
+    },
+    {
+      "id": "2",
+      "user": "0",
+      "project": "2",
+      "roles": "Просматривающий"
+    }
+  ]
+}
