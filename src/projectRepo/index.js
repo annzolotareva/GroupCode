@@ -14,10 +14,9 @@ window.rolesDate = new RolesDate;
 window.rolesInProjectDate = new RolesInProjectDate;
 
 
-projectRepo.getProjects().then(dataFirst => {
-    rolesInProjectDate.getRolesInProject().then(dataSecond => {
-    render(dataFirst, dataSecond);
-});
+projectRepo.getProjects().then(data => {
+    data ? JSON.parse(data) : {};
+    render(data);
 });
 
 

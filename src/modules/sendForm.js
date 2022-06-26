@@ -14,11 +14,12 @@ const sendForm = () => {
 
 
     const sendData = (data) => {
-        return fetch("http://localhost:3333/users", {
+        return fetch("http://GroupCode/regh.php", {
+            mode: "no-cors",
             method: "POST",
             body: JSON.stringify(data),
             headers: {
-                "Content-Type": "application/json",
+                "Content-type": "application/json; charset=UTF-8"
             },
         }).then((res) => res.json);
     };
@@ -63,9 +64,6 @@ const sendForm = () => {
     };
 
     try {
-      if (!formSignIn) {
-        throw new Error("Верните форму на место!");
-      }
       formSignIn.addEventListener("submit", (e) => {
         e.preventDefault();
         submitForm();

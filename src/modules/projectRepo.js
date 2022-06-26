@@ -1,7 +1,11 @@
 export class ProjectRepo {
     
     getProjects() {
-        return fetch('http://localhost:3333/projects').then(response => response.json());
+        return fetch('http://GroupCode/projects.php', 
+            {
+            mode: "no-cors",
+            }).then(response => {
+                console.log(response.json());} );
     }
 
     getProject(id) {
