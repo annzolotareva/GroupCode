@@ -13,7 +13,6 @@ const modalWindow = () => {
     const formElementsSignIn = formSignIn.querySelectorAll("input");
     const formElementsSignUp = formSignUp.querySelectorAll("input");
     const marquee = document.querySelector('marquee');
-    const video = document.querySelectorAll('video');
     const signInText = document.querySelector('.sign-in-text');
     const signUpText = document.querySelector('.sign-up-text');
     let flag = 0;

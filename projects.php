@@ -1,9 +1,9 @@
 <?
-$mysqli = new Mysqli('GroupCode', 'root', 'root', 'GroupCode'); 
-header('Access-Control-Allow-Origin', '*');
-header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+    include "connection.php";
+    header('Access-Control-Allow-Origin', '*');
+    header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
     $result = $mysqli->query("SELECT * FROM `projects`");
-     $projects = array();
+    $projects = array();
     while($row =mysqli_fetch_assoc($result))
     {
         $projects[] = $row;

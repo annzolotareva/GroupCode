@@ -1,5 +1,5 @@
 <?
-$mysqli = new Mysqli('GroupCode', 'root', 'root', 'GroupCode');
+include "connection.php";
 $postData = file_get_contents('php://input');
 $pdObj = json_decode($postData, true);
 $email = $pdObj['user-email'];

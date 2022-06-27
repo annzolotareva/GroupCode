@@ -6,19 +6,19 @@ const validationForms = () => {
     let success = true;
     list.forEach((input) => {
       if (input.name == "user-name") {
-        if (/[^а-я]/gi.test(input.value.trim())) {
+        if (/^[a-z0-9_-]{3,16}$/.test(input.value.trim())) {
           success = false;
         }
       }
       
       if (input.name == "user-email") {
-        if (/[^a-z@]/gi.test(input.value.trim())) {
+        if (/^([a-z0-9_\.-]+)@([a-z0-9_\.-]+)\.([a-z\.]{2,6})$/.test(input.value.trim())) {
           success = false;
         }
       }
 
       if (input.name == "user-password") {
-        if (/[^а-я]/gi.test(input.value.trim())) {
+        if (/^[a-z0-9_-]{6,18}$/.test(input.value.trim())) {
           success = false;
         }
       }

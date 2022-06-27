@@ -2,7 +2,6 @@ const sendFormAuthorization = () => {
     const modalSignUp = document.querySelector('.modal-sign-up');
     const modalOverlay = document.querySelector('.modal-overlay');
     const statusBlock = document.createElement("div");
-    const unvalidText = "Данные не валидны";
     const errorText = "Ошибка";
     const formSignUp = document.querySelector('[name="modal-sign-up__form"]');
     const formElementsSignUp = formSignUp.querySelectorAll(".fdfd");
